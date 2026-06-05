@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khao Aur Khush Raho</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f5f0;
+    color:#333;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    color:white;
+    font-size:2rem;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d9a066;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:600px;
+}
+
+.btn{
+    margin-top:25px;
+    padding:14px 35px;
+    border:none;
+    background:#d9a066;
+    color:white;
+    font-size:1rem;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#b87c3d;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.menu-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.menu-card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#d9a066;
+    font-weight:600;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+    background:#222;
+    color:white;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">☕ Khao Aur Khush Raho</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Menu</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Good Coffee. Good Mood.</h1>
+<p>
+Experience handcrafted coffee, fresh pastries,
+and a cozy atmosphere designed for coffee lovers.
+</p>
+<button class="btn">View Menu</button>
+</div>
+</header>
+
+<section>
+<div class="section-title">
+<h2>About Us</h2>
+</div>
+
+<div class="about">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80">
+
+<div>
+<h3>More Than Just Coffee</h3>
+<br>
+<p>
+At Bean & Bloom Café, we believe every cup tells a story.
+We source premium beans, create artisan beverages,
+and serve delicious homemade treats in a warm environment.
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="section-title">
+<h2>Popular Menu</h2>
+</div>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="c:\Users\SHALONI\Downloads\Cappuccino.jpg">
+<h3>Cappuccino</h3>
+<p>Rich espresso with steamed milk.</p>
+<br>
+<span class="price">₹180</span>
+</div>
+
+<div class="menu-card">
+<img src="c:\Users\SHALONI\Downloads\late.jpg">
+<h3>Latte</h3>
+<p>Smooth coffee topped with silky foam.</p>
+<br>
+<span class="price">₹220</span>
+</div>
+
+<div class="menu-card">
+<img src="c:\Users\SHALONI\Downloads\macha.jpg">
+<h3>Matcha</h3>
+<p>Traditional tea used in Japanese ceremonies.</p>
+<br>
+<span class="price">₹250</span>
+</div>
+
+<div class="menu-card">
+<img src="https://frenchbakery.cafe/wp-content/uploads/2020/08/RARE0020.jpg">
+<h3>Croissant</h3>
+<p>Freshly baked buttery croissant.</p>
+<br>
+<span class="price">₹120</span>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="section-title">
+<h2>Gallery</h2>
+</div>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80">
+</div>
+</section>
+
+<section class="contact">
+<h2>Visit Us</h2>
+<br>
+<p>📍 123 Coffee Street, Kolkata</p>
+<p>📞 +91 98765 43210</p>
+<p>✉ hello@khaoaurkhushraho.com</p>
+</section>
+
+<footer>
+© 2026 Khao Aur Khush Raho. All Rights Reserved.
+</footer>
+
+</body>
+</html>
